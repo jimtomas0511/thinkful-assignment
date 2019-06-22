@@ -1,0 +1,21 @@
+Drills
+Let's confirm some of this new knowledge with a few basic exercises. Write SQL queries to return:
+
+The IDs and durations for all trips of duration greater than 500, ordered by duration:
+
+select trip_id, duration from trips
+	where duration > 500
+	order by duration asc;
+
+Every column of the stations table for station id 84:
+
+select * from stations
+	where station_id = 84;
+  
+The min temperatures of all the occurrences of rain in zip 94301:
+
+select mintemperaturef from weather
+	where zip = 94301
+	and (events = 'Rain' or precipitationin > 0);
+  
+Save your SQL queries in a gist or a GitHub repository and submit a link below.
